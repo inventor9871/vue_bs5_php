@@ -6,12 +6,20 @@
     <title>vue sample</title>
 </head>
 <body>
-    <div id="app"></div>
+    <div id="app">
+        {{ number.map(x=> x*2)}}
+    </div>
 </body>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script>
     const app = Vue.createApp({
-
+        data (){
+            return {
+                message: 'vue.js 3',
+                button_title: '開始學習',
+                number: [1,2,3],
+            }
+        }
     })
     app.mount('#app')
 </script>

@@ -10,7 +10,13 @@
 ```
 <script>
     const app = Vue.createApp({
-
+    //     data (){
+    //         return {
+    //             message: 'vue.js 3',
+    //             button_title: '開始學習',
+    //             number: [1,2,3],
+    //         }
+    //     }
     })
     app.mount('#app')
 </script>
@@ -20,7 +26,7 @@
 <div id="app"></div>
 ```
 ### composition API 範本
-* 所有的 VUE 程式碼都寫在 setup 裡面，最後 return 狀態或方法
+* 所有的 VUE 程式碼都寫在 setup 裡面，最後 return 資料或方法
 ```
 <script>
     const { ref } = Vue;
@@ -35,6 +41,14 @@
     })
 </script>
 ```
+
+### {{ 放資料或運算 }} mustache ，放在 HTML中 顯示 資料
+```
+<h2> {{ message }}</h2>
+<button> {{ button_title}} </button>
+{{ number.map(x => x*2) }}
+```
+
 
 
 
