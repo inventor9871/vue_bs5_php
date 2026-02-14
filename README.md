@@ -1,4 +1,4 @@
-## 跟著 黃聰明的書(Vue.js 3 前端漸進式建構框架) 來進步
+## 跟著 黃聰明大大的書(Vue.js 3 前端漸進式建構框架) 來進步
 
 ## Vue 範本(有兩種，一個是 option_API，另一個是 composition_API)
 ### option_API 範本(本書採用)
@@ -47,6 +47,25 @@
 <h2> {{ message }}</h2>
 <button> {{ button_title}} </button>
 {{ number.map(x => x*2) }}
+
+```
+
+### vue 的屬性
+* v-pre，輸入甚麼，顯示甚麼
+```
+<p v-pre> {{ message }}</p>
+// HTML 只會顯示 {{ message }}
+```
+* v-text
+```
+<p> {{ message }}</p>
+<p v-text="message">這邊的文字不會顯示</p>
+```
+所以不建議在多層次裡使用 v-text
+```
+<p v-text="facebook">
+  <i class="fa-facebook"></i>
+</p>
 ```
 
 
