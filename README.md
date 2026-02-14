@@ -72,7 +72,7 @@
 </p>
 ```
 
-### [bootstrap 5](https://getbootstrap.com/)
+### [bootstrap 5](https://getbootstrap.com/)、[六角中文版](https://bootstrap5.hexschool.com/docs/5.0/getting-started/introduction/)
 * 載入 BS5 CDN (css、js)
 ```
 <!-- Bootstrap CSS -->
@@ -84,7 +84,12 @@
 
 ```
 
-
+### [Font Awesome](https://docs.fontawesome.com/)
+* [fa 的官網說，CDN只支援 v5以下的版本](https://docs.fontawesome.com/web/setup/use-kit/)
+* 來看一下 [w3schools](https://www.w3schools.com/icons/icons_reference.asp) 與 [TW版](https://w3schools.tw/icons/fontawesome_icons_intro.asp)
+```
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+```
 
 
 
