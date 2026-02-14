@@ -53,13 +53,17 @@
 ### vue 的屬性
 * v-pre，輸入甚麼，顯示甚麼
 ```
+// const message = ref('Vue.js 3');
 <p v-pre> {{ message }}</p>
 // HTML 只會顯示 {{ message }}
 ```
 * v-text
 ```
-<p> {{ message }}</p>
-<p v-text="message">這邊的文字不會顯示</p>
+<p>*******{{ message }}</p>
+// HTML 會顯示 *******vue.js 3
+
+<p v-text="message">*******這邊的文字不會顯示</p>
+// HTML 只會顯示  vue.js 3
 ```
 所以不建議在多層次裡使用 v-text
 ```
@@ -68,7 +72,17 @@
 </p>
 ```
 
+### [bootstrap 5](https://getbootstrap.com/)
+* 載入 BS5 CDN (css、js)
+```
+<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+```
 
 
 
